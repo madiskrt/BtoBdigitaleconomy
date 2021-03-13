@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_learn_more"
+        android:hapticFeedbackEnabled="false">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#303135"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto"
+            android:text="South African Startup Hub"
+            android:textAlignment="center"
+            android:textColor="#EAEBEF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto"
+            android:text="100+\n300+\n30+"
+            android:textAlignment="textEnd"
+            android:textColor="@color/dark_txt"
+            app:lineHeight="18dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto"
+            android:text="Startups\nEvaluations\nInvestments"
+            android:textAlignment="textStart"
+            android:textColor="@color/dark_txt"
+            app:lineHeight="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="150dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="This Hub works as a bridge between the\n South African Start-ups and European\n investors, with help of multinational and\n independent experts.\n\n
+Whether you are an investor, a startup, or\n an expert in your field,\n
+We aim to make Your journey secure,\n simple and successful."
+            android:textAlignment="center"
+            android:textColor="@color/dark_txt"
+            android:textSize="12sp"
+            app:lineHeight="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="330dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="* The Intellectual Property is protected with customized\n NDA agreements.\n
+** No investment without 100% evaluation and satisfaction.
+"
+            android:textAlignment="textStart"
+            android:textColor="@color/dark_txt"
+            android:textSize="9sp"
+            app:lineHeight="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:height="40dp"
+            android:fontFamily="@font/roboto"
+            android:text="Sign in"
+            android:textAllCaps="false"
+            android:textColor="@color/dark_txt"
+            android:textSize="14sp"
+            app:backgroundTint="@color/light_txt" />
+
+        <Button
+            android:id="@+id/get_started"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:height="40dp"
+            android:fontFamily="@font/roboto"
+            android:text="Get started"
+            android:textAllCaps="false"
+            android:textColor="@color/dark_txt"
+            app:backgroundTint="@color/yellow" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
