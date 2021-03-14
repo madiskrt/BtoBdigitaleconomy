@@ -95,36 +95,35 @@
 
     <TextView
         android:id="@+id/count1"
-        android:layout_width="112dp"
-        android:layout_height="129dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
         android:layout_weight="1"
         android:fontFamily="@font/roboto"
         android:text="100+\n300+\n30+"
         android:textAlignment="textEnd"
         android:textColor="@color/light_txt"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="@+id/count2"
         app:layout_constraintEnd_toStartOf="@+id/count2"
         app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toBottomOf="@+id/topbar"
         app:lineHeight="40dp" />
 
     <TextView
         android:id="@+id/count2"
-        android:layout_width="205dp"
-        android:layout_height="129dp"
-        android:layout_marginTop="90dp"
-        android:layout_marginEnd="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
         android:layout_weight="1"
         android:fontFamily="@font/roboto"
         android:text="Startups\nEvaluations\nInvestments"
         android:textAlignment="textStart"
         android:textColor="@color/light_txt"
         android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/count1"
         app:layout_constraintStart_toEndOf="@+id/count1"
-        app:layout_constraintTop_toTopOf="@+id/background"
         app:lineHeight="40dp" />
 
     <!--<View
@@ -173,9 +172,9 @@
         android:layout_height="280dp"
         android:layout_marginTop="30dp"
         android:fontFamily="@font/roboto"
-        android:text="This Hub works as a bridge between the\n South African Start-ups and European\n investors, with help of multinational and\n independent experts.\n\n
-Whether you are an investor, a startup, or\n an expert in your field,\n
-We aim to make Your journey secure,\n simple and successful."
+        android:text="This Hub works as a bridge between the South African Start-ups and European investors, with help of multinational and independent experts.\n\n
+Whether you are an investor, a startup, or an expert in your field,
+We aim to make Your journey secure, simple and successful."
         android:textAlignment="center"
         android:textColor="@color/light_txt"
         android:textSize="22sp"
@@ -189,12 +188,12 @@ We aim to make Your journey secure,\n simple and successful."
         android:layout_height="129dp"
         android:layout_marginTop="40dp"
         android:fontFamily="@font/roboto"
-        android:text="* The Intellectual Property is protected with customized\n NDA agreements.\n
+        android:text="* The Intellectual Property is protected with customized NDA agreements.\n
 ** No investment without 100% evaluation and satisfaction.
 "
         android:textAlignment="textStart"
         android:textColor="@color/light_txt"
-        android:textSize="15sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/description"
