@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <View
+        android:id="@+id/background_col"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/vdark_bg" />
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_learn_more"
+
+        <!--app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="@+id/textView1"
+        app:layout_constraintStart_toStartOf="@+id/textView1"
+        app:layout_constraintTop_toTopOf="@+id/textView1"-->
+
+        />
+
+
+
+    <!--<TextView
+        android:id="@+id/textView1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView1"
+        app:layout_constraintStart_toStartOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        tools:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView1"
+        app:layout_constraintStart_toStartOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:text="TextView" />-->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/scr_learn_more"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <View
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/dark_bg"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/light_txt"
+        android:textSize="24sp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="South African Startup Hub"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/count1"
+        android:layout_width="112dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto"
+        android:text="100+\n300+\n30+"
+        android:textAlignment="textEnd"
+        android:textColor="@color/light_txt"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/count2"
+        app:layout_constraintEnd_toStartOf="@+id/count2"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:lineHeight="40dp" />
+
+    <TextView
+        android:id="@+id/count2"
+        android:layout_width="205dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="25dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto"
+        android:text="Startups\nEvaluations\nInvestments"
+        android:textAlignment="textStart"
+        android:textColor="@color/light_txt"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/count1"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        app:lineHeight="40dp" />
+
+    <!--<View
+        android:id="@+id/botbar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/dark_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="invisible"/>-->
+
+    <!--<Button
+        android:id="@+id/sign_in"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="18dp"
+        android:fontFamily="@font/roboto"
+        android:text="Sign in"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_txt"
+        android:textSize="24sp"
+        app:backgroundTint="@color/light_txt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/get_started"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:fontFamily="@font/roboto"
+        android:text="Get started"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_txt"
+        android:textSize="24sp"
+        app:backgroundTint="@color/yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sign_in" />-->
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="411dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto"
+        android:text="This Hub works as a bridge between the\n South African Start-ups and European\n investors, with help of multinational and\n independent experts.\n\n
+Whether you are an investor, a startup, or\n an expert in your field,\n
+We aim to make Your journey secure,\n simple and successful."
+        android:textAlignment="center"
+        android:textColor="@color/light_txt"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/background_col"
+        app:layout_constraintStart_toStartOf="@+id/background_col"
+        app:layout_constraintTop_toBottomOf="@+id/count2"
+        app:lineHeight="32sp" />
+
+    <TextView
+        android:layout_width="408dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/roboto"
+        android:text="* The Intellectual Property is protected with customized\n NDA agreements.\n
+** No investment without 100% evaluation and satisfaction.
+"
+        android:textAlignment="textStart"
+        android:textColor="@color/light_txt"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/description"
+        app:lineHeight="26sp" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="Sign in"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_txt"
+        android:textSize="24sp"
+        app:backgroundTint="@color/light_txt"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="14dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/button_share"
+        app:layout_constraintHorizontal_chainStyle="spread" />
+
+    <Button
+        android:id="@+id/button_share"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="Get started"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_txt"
+        android:textSize="24sp"
+        app:backgroundTint="@color/yellow"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintLeft_toRightOf="@+id/button_save"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
