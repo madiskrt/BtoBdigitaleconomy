@@ -1,6 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202125"
+    android:paddingTop="?attr/actionBarSize">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="236dp"
+        android:layout_height="66dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/sign_in"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#202125"
+        app:backgroundTint="#FFB700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="664dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="1580dp"
+        android:layout_height="2000dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.461"
+        app:srcCompat="@drawable/fircs"
+        android:contentDescription="@string/todo" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="236dp"
+        android:layout_height="66dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/learn_more"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#202125"
+        app:backgroundTint="#EAEBEF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="593dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="302dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/south_african_startup_hub"
+        android:textColor="#303135"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="33dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
