@@ -13,6 +13,7 @@
         android:background="@color/vdark_bg" />
     
     <!--    just a test comment from github -->
+    <!--    just a test comment from Madis -->
 
     <ImageView
         android:id="@+id/imageView"
