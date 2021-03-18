@@ -40,7 +40,7 @@
         android:textAllCaps="false"
         android:textColor="@color/dark_txt"
         android:textSize="24sp"
-        app:background="@color/yellow"
+        app:backgroundTint="@color/yellow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
