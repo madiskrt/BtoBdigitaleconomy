@@ -18,14 +18,14 @@
         android:id="@+id/background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bg_learn_more"
+        android:background="@drawable/bg_learn_more" />
 
         <!--app:layout_constraintBottom_toBottomOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="@+id/textView1"
         app:layout_constraintStart_toStartOf="@+id/textView1"
         app:layout_constraintTop_toTopOf="@+id/textView1"-->
 
-        />
+
 
 
 
@@ -106,9 +106,11 @@
         android:textAlignment="textEnd"
         android:textColor="@color/light_txt"
         android:textSize="30sp"
-        app:layout_constraintEnd_toStartOf="@+id/count2"
+        app:lineHeight="40dp"
         app:layout_constraintStart_toStartOf="@+id/background"
         app:layout_constraintTop_toBottomOf="@+id/topbar"
+<!--        app:layout_constraintEnd_toStartOf="@+id/count2"-->
+
         app:lineHeight="40dp" />
 
     <TextView
