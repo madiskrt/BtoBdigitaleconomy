@@ -4,4 +4,6 @@
     <string name="learn_more">Learn more</string>
     <string name="south_african_startup_hub">South African Startup Hub</string>
     <string name="test_text">test text</string>
+
+    <string name="email">E-mail address</string>
 </resources>
