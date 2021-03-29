@@ -1,7 +1,245 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-//proov
-    //278
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303135"
+    android:paddingTop="@dimen/material_emphasis_medium"
+    tools:ignore="ExtraText">>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/getstarted"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="12dp" />
+
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/roboto"
+        android:text="Back"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#EAEBEF"
+        android:textSize="24sp"
+        app:backgroundTint="#303135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="310dp"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:text="@string/south_african_startup_hub"
+        android:textColor="#EAEBEF"
+        android:textSize="24sp"
+        app:drawableTint="#303135"
+        app:layout_constraintStart_toEndOf="@id/Back"
+        app:layout_constraintTop_toTopOf="@id/Back"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="95dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginLeft="156dp"
+        android:layout_marginTop="76dp"
+        android:gravity="start"
+        android:text="Investor"
+        android:textColor="#FFB700"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="311dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center|top"
+        android:text="find your golden goose!"
+        android:textColor="#EAEBEF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView8" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="385dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:gravity="start"
+        android:text="How it works"
+        android:textColor="#EAEBEF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:drawableTint="#303135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView9" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="384dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:gravity="start"
+        android:text="Lorem ipsum"
+        android:textColor="#EAEBEF"
+        android:textSize="14sp"
+        app:drawableTint="#303135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="385dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        android:text="Benefits"
+        android:textColor="#EAEBEF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:drawableTint="#303135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView6"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="380dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:gravity="start"
+        android:text="Lorem ipsum"
+        android:textColor="#EAEBEF"
+        android:textSize="14sp"
+        app:drawableTint="#303135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView5" />
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="385dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        android:text="Costs"
+        android:textColor="#EAEBEF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:drawableTint="#303135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView4"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="380dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:gravity="start"
+        android:text="Lorem ipsum"
+        android:textColor="#EAEBEF"
+        android:textSize="14sp"
+        app:drawableTint="#303135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView10" />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Sign up as investor"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#202125"
+        app:backgroundTint="#FFB700"
+        app:iconTint="#303135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView7" />
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="64dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="620dp"
+        android:gravity="start"
+        android:text="The Hub"
+        android:textColor="#FFB700"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:drawableTint="#303135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="64dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="620dp"
+        android:gravity="center"
+        android:text="Investor"
+        android:textColor="#EAEBEF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:drawableTint="#303135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="64dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="620dp"
+        android:gravity="center"
+        android:text="Expert"
+        android:textColor="#EAEBEF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:drawableTint="#303135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="64dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="620dp"
+        android:gravity="center"
+        android:text="Startup"
+        android:textColor="#EAEBEF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:drawableTint="#303135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="64dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="620dp"
+        android:gravity="center"
+        android:text="Ideagenix"
+        android:textColor="#EAEBEF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:drawableTint="#303135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
