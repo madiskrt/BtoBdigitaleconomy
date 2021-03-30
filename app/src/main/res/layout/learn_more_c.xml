@@ -110,9 +110,9 @@
         app:lineHeight="40dp"
         app:layout_constraintStart_toStartOf="@+id/background"
         app:layout_constraintTop_toBottomOf="@+id/topbar"
+        />
 <!--        app:layout_constraintEnd_toStartOf="@+id/count2"-->
 
-        app:lineHeight="40dp" />
 
     <TextView
         android:id="@+id/count2"

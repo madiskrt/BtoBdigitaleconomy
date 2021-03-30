@@ -191,7 +191,7 @@
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/facebook"
-        app:srcCompat="@drawable/Google"
+        app:srcCompat="@drawable/google"
         />
 
     <ImageView
@@ -204,7 +204,7 @@
         app:layout_constraintTop_toBottomOf="@+id/pwbar"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        app:srcCompat="@drawable/Facebook" />
+        app:srcCompat="@drawable/facebook" />
 
     <ImageView
         android:id="@+id/microsoft"
@@ -215,7 +215,7 @@
 
         app:layout_constraintStart_toEndOf="@+id/facebook"
         app:layout_constraintTop_toTopOf="@+id/facebook"
-        app:srcCompat="@drawable/Microsoft" />
+        app:srcCompat="@drawable/microsoft" />
 
 
     <TextView

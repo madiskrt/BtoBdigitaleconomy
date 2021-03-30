@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/emailbar"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/dark_bg"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto"
+        android:text="column1"
+        android:textAlignment="textStart"
+        android:textColor="@color/light_txt"
+        android:textSize="18sp"
+        android:id="@+id/course"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/emailbar"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto"
+        android:text="column2"
+        android:textAlignment="textStart"
+        android:textColor="@color/light_txt"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/emailbar"
+        app:layout_constraintTop_toTopOf="@id/emailbar"
+        android:id="@+id/program"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
