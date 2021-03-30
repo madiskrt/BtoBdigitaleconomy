@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Menu"
+        android:icon="@drawable/ic_menu"
+        android:id="@+id/dropdown_menu"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_Messages"
+        android:title="Messages" />
+    <item
+        android:id="@+id/action_Dashboard"
+        android:title="Dashboard" />
+    <item
+        android:id="@+id/action_Home"
+        android:title="Home" />
+    <item
+        android:id="@+id/action_My_Projects"
+        android:title="My Projects" />
+    <item
+        android:id="@+id/action_Evaluations"
+        android:title="Evaluations" />
+    <item
+        android:id="@+id/action_Agreements"
+        android:title="Agreements" />
+    <item
+        android:id="@+id/action_Meetings"
+        android:title="Meetings" />
+    <item
+        android:id="@+id/action_My_Profile"
+        android:title="My Profile" />
+    <item
+        android:id="@+id/action_About"
+        android:title="About" />
+    <item
+        android:id="@+id/action_Log_out"
+        android:title="Log out" />
+
+    //https://www.youtube.com/watch?v=__bIqpbc4DA
+</menu>
