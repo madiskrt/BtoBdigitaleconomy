@@ -5,8 +5,12 @@
     android:layout_height="700dp"
     >
 
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
     <ListView
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="80dp"
         android:layout_width="match_parent"
         android:layout_height="600dp"
         android:id="@+id/listView1">

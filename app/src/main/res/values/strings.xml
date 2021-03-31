@@ -11,4 +11,12 @@
     <string name="find_your_golden_goose" />
     <string name="benefits" />
     <string name="the_hub" />
+
+    <array name="industries">
+        <item>aaaa</item>
+        <item>bbbb</item>
+        <item>cccc</item>
+        <item>dddd</item>
+    </array>
+
 </resources>

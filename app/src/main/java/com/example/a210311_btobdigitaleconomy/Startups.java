@@ -8,21 +8,21 @@ public class Startups {
     String industry;
     String rank;
 
+    //constructor
     public Startups(String name, String industry, String rank) {
-        Log.d("logging", "public Startups");
+        Log.d("logging", "constructor Startups");
         this.name = name;
         this.industry = industry;
         this.rank = rank;
     }
 
+    //getters
     public String getName() {
         return name;
     }
-
     public String getIndustry() {
         return industry;
     }
-
     public String getRank() {
         return rank;
     }
