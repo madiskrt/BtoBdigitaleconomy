@@ -23,6 +23,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+    private Button intro_sign_in;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.intro);
 
+        intro_sign_in = (Button) findViewById(R.id.intro_sign_in);
+        intro_sign_in.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openSign_up_c();
+            }
+        });
+
     } //onCreate ends
-    
+    public void openSign_up_c(){
+        Intent intent = new Intent(this, sign_up_c.class);
+        startActivity(intent);
+
+    }
 }
