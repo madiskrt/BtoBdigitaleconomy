@@ -29,19 +29,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+        //setContentView(R.layout.sign_in_c);
         setContentView(R.layout.intro);
 
         intro_sign_in = (Button) findViewById(R.id.intro_sign_in);
         intro_sign_in.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openSign_up_c();
+                openSignIn();
             }
         });
 
     } //onCreate ends
-    public void openSign_up_c(){
-        Intent intent = new Intent(this, sign_up_c.class);
+    public void openSignIn(){
+        Intent intent = new Intent(this, SignInActivity.class);
         startActivity(intent);
 
     }

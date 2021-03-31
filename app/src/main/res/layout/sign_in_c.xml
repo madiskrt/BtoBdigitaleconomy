@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
 
     <View
@@ -23,20 +25,22 @@
         android:visibility="invisible"
         app:srcCompat="@drawable/scr_learn_more"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
 
     <View
         android:id="@+id/topbar"
         android:layout_width="match_parent"
         android:layout_height="65dp"
-        android:background="@color/dark_bg" />
+        android:background="@color/dark_bg"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button_share"
         android:layout_width="200dp"
         android:layout_height="60dp"
         android:layout_marginBottom="18dp"
-        android:text="Sign up"
+        android:text="Sign in"
         android:textAllCaps="false"
         android:textColor="@color/dark_txt"
         android:textSize="24sp"
@@ -82,7 +86,7 @@
         android:layout_marginTop="50dp"
         android:layout_weight="1"
         android:fontFamily="@font/roboto"
-        android:text="Sign up as Investor,\n and start the journey!"
+        android:text="Sign in as Investor,\n and start the journey!"
         android:textAlignment="center"
         android:textColor="@color/light_txt"
         android:textSize="30sp"
@@ -95,7 +99,7 @@
         android:id="@+id/emailbar"
         android:layout_width="match_parent"
         android:layout_height="95dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:background="@color/dark_bg"
         app:layout_constraintTop_toBottomOf="@+id/count1" />
 
@@ -173,7 +177,7 @@
         android:layout_marginLeft="20dp"
 
         android:fontFamily="@font/roboto"
-        android:text="Sign up with"
+        android:text="Sign in with"
         android:textAlignment="textStart"
         android:textColor="@color/light_txt"
         android:textSize="18sp"
@@ -191,20 +195,21 @@
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/facebook"
-        app:srcCompat="@drawable/google"
+        android:src="@drawable/google2"
         />
 
     <ImageView
         android:id="@+id/facebook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="60dp"
         app:layout_constraintEnd_toStartOf="@+id/microsoft"
         app:layout_constraintStart_toEndOf="@+id/google"
         app:layout_constraintTop_toBottomOf="@+id/pwbar"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        app:srcCompat="@drawable/facebook" />
+        app:srcCompat="@drawable/fb3"
+         />
 
     <ImageView
         android:id="@+id/microsoft"
@@ -215,7 +220,7 @@
 
         app:layout_constraintStart_toEndOf="@+id/facebook"
         app:layout_constraintTop_toTopOf="@+id/facebook"
-        app:srcCompat="@drawable/microsoft" />
+        app:srcCompat="@drawable/microsoft2" />
 
 
     <TextView
@@ -231,16 +236,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:lineHeight="26sp" />
-
-
-
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5" />
 
 <!--    just a test comment from AS -->
 

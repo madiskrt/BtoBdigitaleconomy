@@ -7,11 +7,13 @@
     android:layout_height="match_parent"
     android:background="#202125"
     tools:context=".MainActivity">
+
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:srcCompat="@drawable/intro_bg" />
+
     <Button
         android:id="@+id/intro_sign_in"
         android:layout_width="236dp"
