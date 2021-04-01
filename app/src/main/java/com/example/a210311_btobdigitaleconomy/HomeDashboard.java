@@ -12,7 +12,7 @@ public class HomeDashboard extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home_dash_draft);
+        setContentView(R.layout._home_dash_c);
 
     }
 
