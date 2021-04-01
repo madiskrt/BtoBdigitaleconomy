@@ -10,7 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     private Button intro_sign_in;
     private Button insert;
-    private Button list;
+    private Button list; //
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
