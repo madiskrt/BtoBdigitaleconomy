@@ -37,6 +37,6 @@
     <item
         android:id="@+id/action_Log_out"
         android:title="Log out" />
-
-    //https://www.youtube.com/watch?v=__bIqpbc4DA
+    
+<!--    https://www.youtube.com/watch?v=__bIqpbc4DA-->
 </menu>
