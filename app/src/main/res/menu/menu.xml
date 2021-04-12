@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
     <item
         android:title="Menu"
         android:icon="@drawable/ic_menu"
@@ -10,7 +9,11 @@
     <item
         android:id="@+id/action_Messages"
         android:title="Messages"
-        app:showAsAction="never"/>
+        android:textColor="#EAEBEF"
+        android:textSize="24sp"
+        app:backgroundTint="#303135"
+        app:showAsAction="never"
+        />
     <item
         android:id="@+id/action__home_dash_c"
         android:title="Dashboard"
@@ -47,6 +50,4 @@
         android:id="@+id/action__sign_in_c"
         android:title="Log out"
         app:showAsAction="never"/>
-
-<!--    https://www.youtube.com/watch?v=__bIqpbc4DA-->
 </menu>

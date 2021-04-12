@@ -10,6 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     private Button intro_sign_in;
     private Button insert;
+    private Button lmButton;
     private Button list; //
 
     @Override
@@ -32,6 +33,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openInsertTemp();
+            }
+        });
+        lmButton = (Button) findViewById(R.id.lmButton);
+        lmButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openlmButton();
             }
         });
 
@@ -60,4 +68,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+    public void openlmButton(){
+        Intent intent = new Intent(this, activity_menu.class);
+        startActivity(intent);
+}
 }
