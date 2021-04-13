@@ -4,10 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.PopupMenu;
+import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
     private Button intro_sign_in;
     private Button insert;
     private Button lmButton;
@@ -58,6 +61,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }*/
 
+    public void showMenu(View v){
+        PopupMenu popup = new PopupMenu(this, v);
+        popup.setOnMenuItemClickListener(this);
+        popup.inflate(R.menu.menu);
+        popup.show();
+    }
+
     private void openInsertTemp() {
         Intent intent = new Intent(this, InsertTemp.class);
         startActivity(intent);
@@ -72,4 +82,16 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, activity_menu.class);
         startActivity(intent);
 }
+
+    @Override
+    public boolean onMenuItemClick(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.action__home_dash_c:
+                Toast.makeText(this, "Dash clicked", Toast.LENGTH_SHORT).show();
+                return true;
+            default:
+                return false;
+        }
+    }
+
 }
