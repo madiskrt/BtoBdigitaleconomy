@@ -31,13 +31,15 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
             }
         });
 
-        insert = (Button) findViewById(R.id.insert);
+        /*insert = (Button) findViewById(R.id.btn_signIn_lm);
         insert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openInsertTemp();
+                openSignIn();
             }
-        });
+        });*/
+
+        //Activity - Learn more
         lmButton = (Button) findViewById(R.id.lmButton);
         lmButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,20 +76,31 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
     }
 
     public void openSignIn(){
-        Intent intent = new Intent(this, SignInActivity.class);
-        startActivity(intent);
-
+        /*Intent intent = new Intent(this, SignInActivity.class);
+        startActivity(intent);*/
+        setContentView(R.layout._sign_in_c);
     }
+
     public void openlmButton(){
-        Intent intent = new Intent(this, activity_menu.class);
-        startActivity(intent);
-}
+        /*Intent intent = new Intent(this, activity_menu.class);
+        startActivity(intent);*/
+        setContentView(R.layout._learn_more_c);
+    }
+
+    public void openMyProfile(){
+        setContentView(R.layout.profile);
+    }
 
     @Override
     public boolean onMenuItemClick(MenuItem item) {
         switch (item.getItemId()){
             case R.id.action__home_dash_c:
-                Toast.makeText(this, "Dash clicked", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "Dash clicked", Toast.LENGTH_SHORT).show();
+                openInsertTemp();
+                return true;
+            case R.id.action_My_Profile:
+                //Toast.makeText(this, "Dash clicked", Toast.LENGTH_SHORT).show();
+                openMyProfile();
                 return true;
             default:
                 return false;

@@ -11,8 +11,8 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/intro_bg" />
@@ -37,7 +37,7 @@
         android:id="@+id/lmButton"
         android:layout_width="236dp"
         android:layout_height="66dp"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="400dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/learn_more"
         android:textAllCaps="false"
@@ -64,7 +64,7 @@
         android:id="@+id/topText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="26dp"
         android:layout_marginTop="36dp"
         android:fontFamily="@font/roboto"
         android:shadowColor="#FFFFFF"
@@ -73,7 +73,7 @@
         android:shadowRadius="2.0"
         android:text="@string/south_african_startup_hub"
         android:textColor="#303135"
-        android:textSize="32sp"
+        android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
