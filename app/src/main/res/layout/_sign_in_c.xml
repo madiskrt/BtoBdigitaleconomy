@@ -49,16 +49,17 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
-    <TextView
+    <Button
+        android:id="@+id/btnBackSignIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/roboto"
         android:text="Back"
-        android:textAlignment="textStart"
+        android:textAllCaps="false"
         android:textColor="@color/light_txt"
-        android:textSize="18sp"
+        android:textSize="14sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -68,13 +69,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
+        android:layout_marginRight="30dp"
         android:fontFamily="@font/roboto"
         android:text="South African Startup Hub"
         android:textAlignment="center"
         android:textColor="@color/light_txt"
         android:textSize="24sp"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         />
@@ -89,7 +89,7 @@
         android:text="Sign in as Investor,\n and start the journey!"
         android:textAlignment="center"
         android:textColor="@color/light_txt"
-        android:textSize="30sp"
+        android:textSize="28sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topbar"

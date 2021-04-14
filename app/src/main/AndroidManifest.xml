@@ -14,16 +14,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:replace="android:icon,android:theme">
-        <activity android:name=".AboutActivity"></activity>
+        <activity android:name=".MyProjectsActivity"></activity>
+        <activity android:name=".AboutActivity" />
         <activity android:name=".GetStartedActivity" />
         <activity android:name=".LearnMoreActivity" />
         <activity android:name=".HomeDashboard" />
-
         <activity android:name=".InsertTemp" />
         <activity android:name=".SignInActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".MainActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

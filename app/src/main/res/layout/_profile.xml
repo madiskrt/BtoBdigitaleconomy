@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
 
     <View
         android:id="@+id/background_col"
@@ -12,15 +12,32 @@
         android:layout_height="match_parent"
         android:background="@color/vdark_bg" />
 
+    <View
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/dark_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
-        android:id="@+id/imageView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/showMenu2"
+        android:onClick="showMenu"
+        app:srcCompat="@drawable/hamb"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.307"
         app:srcCompat="@drawable/profile" />
 
     <ImageView
@@ -38,6 +55,8 @@
         android:id="@+id/profilebutton"
         android:layout_width="match_parent"
         android:layout_height="54dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:fontFamily="sans-serif-medium"
         android:text="Edit profile"
         android:textAllCaps="false"
@@ -46,15 +65,23 @@
         android:textSize="24sp"
         app:backgroundTint="#FFB700"
         app:iconTint="#303135"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/imageView6" />
+        app:layout_constraintBottom_toTopOf="@id/imageView6"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/prof_namebar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/dark_bg"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/prof_guide1" />
 
     <TextView
         android:id="@+id/profiletextView1"
         android:layout_width="385dp"
         android:layout_height="22dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="340dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
         android:gravity="start"
         android:text="Name"
         android:textColor="#EAEBEF"
@@ -62,55 +89,133 @@
         android:textStyle="bold"
         app:drawableTint="#303135"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="@id/prof_namebar" />
 
     <TextView
         android:id="@+id/profiletextView2"
         android:layout_width="384dp"
         android:layout_height="83dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="20dp"
         android:gravity="start"
-        android:text="Lorem ipsum"
+        android:text="Madis Kaljurand"
         android:textColor="#EAEBEF"
         android:textSize="14sp"
         app:drawableTint="#303135"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profiletextView1" />
 
-        app:layout_constraintTop_toBottomOf="@id/profiletextView1"
-        />
+    <View
+        android:id="@+id/prof_email"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/dark_bg"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/prof_namebar" />
 
     <TextView
         android:id="@+id/profiletextView3"
         android:layout_width="385dp"
         android:layout_height="22dp"
-        android:layout_marginStart="4dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
         android:gravity="start"
-        android:text="About me"
+        android:text="E-mail address"
         android:textColor="#EAEBEF"
         android:textSize="14sp"
         android:textStyle="bold"
         app:drawableTint="#303135"
         app:layout_constraintStart_toStartOf="parent"
-
-        app:layout_constraintTop_toBottomOf="@id/profiletextView2"
-        />
+        app:layout_constraintTop_toTopOf="@id/prof_email" />
 
     <TextView
         android:id="@+id/profiletextView4"
         android:layout_width="384dp"
-        android:layout_height="83dp"
-        android:layout_marginStart="8dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:gravity="start"
-        android:text="Lorem ipsum"
+        android:text="madis.kaljurand@tlu.ee"
         android:textColor="#EAEBEF"
         android:textSize="14sp"
         app:drawableTint="#303135"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/profiletextView3"
-        />
+        app:layout_constraintTop_toBottomOf="@id/profiletextView3" />
 
+    <View
+        android:id="@+id/prof_phone"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/dark_bg"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/prof_email" />
 
+    <TextView
+        android:id="@+id/phonelabel"
+        android:layout_width="385dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="start"
+        android:text="Phone number"
+        android:textColor="#EAEBEF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:drawableTint="#303135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/prof_phone" />
+
+    <TextView
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:gravity="start"
+        android:text="+372 5566 7788"
+        android:textColor="#EAEBEF"
+        android:textSize="14sp"
+        app:drawableTint="#303135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phonelabel" />
+
+    <View
+        android:id="@+id/prof_company"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/dark_bg"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/prof_phone" />
+
+    <TextView
+        android:id="@+id/companylabel"
+        android:layout_width="385dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="start"
+        android:text="Company"
+        android:textColor="#EAEBEF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:drawableTint="#303135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/prof_company" />
+
+    <TextView
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:gravity="start"
+        android:text="Lorem ipsum OÜ"
+        android:textColor="#EAEBEF"
+        android:textSize="14sp"
+        app:drawableTint="#303135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/companylabel" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/prof_guide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="285dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

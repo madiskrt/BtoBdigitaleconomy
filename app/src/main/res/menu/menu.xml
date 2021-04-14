@@ -15,7 +15,7 @@
         app:showAsAction="never"
         />
     <item
-        android:id="@+id/action__home_dash_c"
+        android:id="@+id/menuHomeDash"
         android:title="Dashboard"
         app:showAsAction="never"/>
     <item
@@ -23,7 +23,7 @@
         android:title="Home"
         app:showAsAction="never"/>
     <item
-        android:id="@+id/action_My_Projects"
+        android:id="@+id/menuMyProjects"
         android:title="My Projects"
         app:showAsAction="never"/>
     <item

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyProjectsActivity">
+
+
+
+    <View
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/dark_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <View
+        android:id="@+id/background_col"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/vdark_bg" />
+
+
+    <View
+        android:id="@+id/results"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#2F3655"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topbar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:textAlignment="center"
+        android:textColor="@color/light_txt"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="My Projects"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="2 projects"
+        android:textAlignment="center"
+        android:textColor="@color/light_txt"
+        android:textSize="22sp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/results" />
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="#000000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/results" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="Name"
+        android:textColor="@color/light_txt"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/results" />
+
+    <TextView
+        android:id="@+id/change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/roboto"
+        android:text="Status"
+        android:textColor="@color/light_txt"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/results" />
+
+    <TextView
+        android:id="@+id/industry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/roboto"
+        android:text="Industry"
+        android:textColor="@color/light_txt"
+        android:textSize="18sp"
+        app:layout_constraintRight_toLeftOf="@id/rank"
+        app:layout_constraintTop_toBottomOf="@id/results" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/showMenu2"
+        android:onClick="showMenu"
+        app:srcCompat="@drawable/hamb"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp"
+        />
+
+    <View
+        android:id="@+id/startup1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/vdark_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/change" />
+
+    <TextView
+        android:id="@+id/startup1name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="Flowrite"
+        android:textColor="@color/light_txt"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/startup1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/roboto"
+        android:text="ITSW"
+        android:textColor="@color/light_txt"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@id/guide1"
+        app:layout_constraintBottom_toBottomOf="@id/startup1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/roboto"
+        android:text="22.03.21"
+        android:textColor="@color/light_txt"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@id/guide2"
+        app:layout_constraintBottom_toBottomOf="@id/startup1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/guide3"
+        app:layout_constraintBottom_toBottomOf="@id/startup1"
+        app:srcCompat="@drawable/green_rec"/>
+
+    <View
+        android:id="@+id/startup2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/vdark_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/startup1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="Betolar"
+        android:textColor="@color/light_txt"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/startup2"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/roboto"
+        android:text="ENGR"
+        android:textColor="@color/light_txt"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@id/guide1"
+        app:layout_constraintBottom_toBottomOf="@id/startup2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/roboto"
+        android:text="30.02.21"
+        android:textColor="@color/light_txt"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@id/guide2"
+        app:layout_constraintBottom_toBottomOf="@id/startup2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/guide3"
+        app:layout_constraintBottom_toBottomOf="@id/startup2"
+        app:srcCompat="@drawable/red_rec"/>
+
+
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/roboto"
+        android:text="Start"
+        android:textColor="@color/light_txt"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@id/guide2"
+        app:layout_constraintTop_toBottomOf="@id/results"
+        tools:ignore="DuplicateIds" />
+
+    <TextView
+        android:id="@+id/industry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/roboto"
+        android:text="Industry"
+        android:textColor="@color/light_txt"
+        android:textSize="18sp"
+        app:layout_constraintRight_toLeftOf="@id/rank"
+        app:layout_constraintTop_toBottomOf="@id/results"
+        tools:ignore="DuplicateIds" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="331dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="@id/industry" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="266dp"
+        app:layout_constraintLeft_toLeftOf="@id/rank" />
+
+    <View
+        android:id="@+id/socialbar"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/dark_bg"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageView
+        android:id="@+id/myproj_botbar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/myprojects_bot" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="@id/change" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
