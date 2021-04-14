@@ -14,7 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon,android:theme">
-        <activity android:name=".HomeDashboard"></activity>
+        <activity android:name=".GetStartedActivity"></activity>
+        <activity android:name=".LearnMoreActivity" />
+        <activity android:name=".HomeDashboard" />
         <activity android:name=".ListActivityTemp" />
         <activity android:name=".InsertTemp" />
         <activity android:name=".SignInActivity" />

@@ -11,10 +11,8 @@ import android.widget.PopupMenu;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
-    private Button intro_sign_in;
-    private Button insert;
-    private Button lmButton;
-    private Button list; //
+    private Button btn_SignIn;
+    private Button btn_LearnMore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,45 +21,25 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
         //setContentView(R.layout.insert_temp);
         setContentView(R.layout._intro_c);
 
-        intro_sign_in = (Button) findViewById(R.id.intro_sign_in);
-        intro_sign_in.setOnClickListener(new View.OnClickListener() {
+        btn_SignIn = (Button) findViewById(R.id.btnSignIn);
+        btn_SignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openSignIn();
             }
         });
-
-        /*insert = (Button) findViewById(R.id.btn_signIn_lm);
-        insert.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openSignIn();
-            }
-        });*/
 
         //Activity - Learn more
-        lmButton = (Button) findViewById(R.id.lmButton);
-        lmButton.setOnClickListener(new View.OnClickListener() {
+        btn_LearnMore = (Button) findViewById(R.id.btnLearnMore);
+        btn_LearnMore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openlmButton();
+                openLearnMore();
             }
         });
-
-        /*list = (Button) findViewById(R.id.list);
-        list.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openList();
-            }
-        });*/
 
     } //onCreate ends
 
-    /*private void openList() {
-        Intent intent = new Intent(this, MyList.class);
-        startActivity(intent);
-    }*/
 
     public void showMenu(View v){
         PopupMenu popup = new PopupMenu(this, v);
@@ -70,21 +48,15 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
         popup.show();
     }
 
-    private void openInsertTemp() {
-        Intent intent = new Intent(this, InsertTemp.class);
+    public void openSignIn(){
+        Intent intent = new Intent(this, SignInActivity.class);
         startActivity(intent);
     }
 
-    public void openSignIn(){
-        /*Intent intent = new Intent(this, SignInActivity.class);
-        startActivity(intent);*/
-        setContentView(R.layout._sign_in_c);
-    }
+    public void openLearnMore(){
+        Intent intent = new Intent(this, LearnMoreActivity.class);
+        startActivity(intent);
 
-    public void openlmButton(){
-        /*Intent intent = new Intent(this, activity_menu.class);
-        startActivity(intent);*/
-        setContentView(R.layout._learn_more_c);
     }
 
     public void openMyProfile(){
@@ -95,8 +67,7 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
     public boolean onMenuItemClick(MenuItem item) {
         switch (item.getItemId()){
             case R.id.action__home_dash_c:
-                //Toast.makeText(this, "Dash clicked", Toast.LENGTH_SHORT).show();
-                openInsertTemp();
+                Toast.makeText(this, "Dash clicked", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.action_My_Profile:
                 //Toast.makeText(this, "Dash clicked", Toast.LENGTH_SHORT).show();

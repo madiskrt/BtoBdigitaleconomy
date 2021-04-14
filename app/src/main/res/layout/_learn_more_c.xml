@@ -82,7 +82,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto"
-        android:text="TextView"
         android:textAlignment="center"
         android:textColor="@color/light_txt"
         android:textSize="24sp"
@@ -90,7 +89,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="South African Startup Hub"
+        android:text="South African Startup Hub"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"/>
 
@@ -207,7 +206,7 @@ We aim to make Your journey secure, simple and successful."
         app:lineHeight="26sp" />
 
     <Button
-        android:id="@+id/btn_signIn_lm"
+        android:id="@+id/btnSignIn"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:text="Sign in"
@@ -220,11 +219,11 @@ We aim to make Your journey secure, simple and successful."
         android:layout_marginEnd="14dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/btn_getStarted_lm"
+        app:layout_constraintRight_toLeftOf="@+id/btnGetStarted"
         app:layout_constraintHorizontal_chainStyle="spread" />
 
     <Button
-        android:id="@+id/btn_getStarted_lm"
+        android:id="@+id/btnGetStarted"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:text="Get started"
@@ -235,7 +234,7 @@ We aim to make Your journey secure, simple and successful."
         android:layout_marginStart="4dp"
         android:layout_marginEnd="18dp"
         android:layout_marginBottom="18dp"
-        app:layout_constraintLeft_toRightOf="@+id/btn_signIn_lm"
+        app:layout_constraintLeft_toRightOf="@+id/btnSignIn"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent" />
 
