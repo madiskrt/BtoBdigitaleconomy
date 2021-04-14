@@ -32,8 +32,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/profilbuttons"
         tools:layout_editor_absoluteY="594dp"
-        app:layout_constraintTop_toBottomOf="profiletextView4"
-        />
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/profilebutton"
@@ -45,9 +44,10 @@
         android:textColor="#202125"
         app:backgroundTint="#FFB700"
         app:iconTint="#303135"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintStart_toBottomOf="profiletextView4"
-        tools:layout_editor_absoluteY="583dp" />
+        tools:layout_editor_absoluteY="583dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/profiletextView1"
@@ -77,8 +77,7 @@
         app:drawableTint="#303135"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="357dp"
-        app:layout_constraintTop_toBottomOf="@id/profiletextView1"
-         />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/profiletextView3"
@@ -93,8 +92,8 @@
         app:drawableTint="#303135"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="447dp"
-        app:layout_constraintTop_toBottomOf="@id/profiletextView2"
-         />
+
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/profiletextView4"
@@ -108,7 +107,7 @@
         app:drawableTint="#303135"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="469dp"
-        app:layout_constraintTop_toBottomOf="profiletextView3" />
+        tools:ignore="MissingConstraints" />
 
 
 
