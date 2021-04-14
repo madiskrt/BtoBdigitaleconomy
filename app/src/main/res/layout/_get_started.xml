@@ -8,15 +8,19 @@
     android:background="#303135"
     android:paddingTop="@dimen/material_emphasis_medium"
     tools:ignore="ExtraText"
-    tools:context=".MainActivity">>>
+    tools:context=".MainActivity"><![CDATA[>>
+
+
+
+    ]]>
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/getstarted"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="12dp" />
+        tools:layout_editor_absoluteY="92dp" />
 
     <Button
         android:id="@+id/Back"
@@ -50,9 +54,8 @@
         android:id="@+id/textView8"
         android:layout_width="95dp"
         android:layout_height="34dp"
-        android:layout_marginStart="156dp"
-        android:layout_marginLeft="156dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="80dp"
         android:gravity="start"
         android:text="Investor"
         android:textColor="#FFB700"
@@ -60,14 +63,15 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textView9"
         android:layout_width="311dp"
         android:layout_height="70dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="8dp"
         android:gravity="center|top"
-        android:text="find your golden goose!"
+        android:text="Find your golden goose!"
         android:textColor="#EAEBEF"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -171,76 +175,15 @@
         app:iconTint="#303135"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView7" />
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="64dp"
-        android:layout_height="19dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="620dp"
-        android:gravity="start"
-        android:text="The Hub"
-        android:textColor="#FFB700"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:drawableTint="#303135"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="64dp"
-        android:layout_height="19dp"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="620dp"
-        android:gravity="center"
-        android:text="Investor"
-        android:textColor="#EAEBEF"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        app:drawableTint="#303135"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="64dp"
-        android:layout_height="19dp"
-        android:layout_marginStart="168dp"
-        android:layout_marginTop="620dp"
-        android:gravity="center"
-        android:text="Expert"
-        android:textColor="#EAEBEF"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        app:drawableTint="#303135"
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="514dp"
+        android:layout_height="139dp"
+        app:srcCompat="@drawable/getstartedbuttons"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="584dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="64dp"
-        android:layout_height="19dp"
-        android:layout_marginStart="248dp"
-        android:layout_marginTop="620dp"
-        android:gravity="center"
-        android:text="Startup"
-        android:textColor="#EAEBEF"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        app:drawableTint="#303135"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/button3"/>
 
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="64dp"
-        android:layout_height="19dp"
-        android:layout_marginStart="324dp"
-        android:layout_marginTop="620dp"
-        android:gravity="center"
-        android:text="Ideagenix"
-        android:textColor="#EAEBEF"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        app:drawableTint="#303135"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
