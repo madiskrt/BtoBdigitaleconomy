@@ -1,26 +1,424 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!--<Button
-        android:id="@+id/showMenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Menu"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="showMenu" />-->
+    <View
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/dark_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/background_col"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/light_txt" />
+        android:background="@color/vdark_bg" />
+
+
+    <View
+        android:id="@+id/results"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#5D5535"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topbar" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="36 results"
+        android:textAlignment="center"
+        android:textColor="@color/light_txt"
+        android:textSize="22sp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/results" />
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="#000000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/results" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="Name"
+        android:textColor="@color/light_txt"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/results" />
+
+    <TextView
+        android:id="@+id/change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/roboto"
+        android:text="Change"
+        android:textColor="@color/light_txt"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/results" />
+
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/roboto"
+        android:text="Rank"
+        android:textColor="@color/light_txt"
+        android:textSize="18sp"
+        app:layout_constraintRight_toLeftOf="@id/change"
+        app:layout_constraintTop_toBottomOf="@id/results" />
+
+    <TextView
+        android:id="@+id/industry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/roboto"
+        android:text="Industry"
+        android:textColor="@color/light_txt"
+        android:textSize="18sp"
+        app:layout_constraintRight_toLeftOf="@id/rank"
+        app:layout_constraintTop_toBottomOf="@id/results" />
+
+    <Button
+        android:id="@+id/showMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="148dp"
+        android:onClick="showMenu"
+        android:text="Menu"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/showMenu2"
+        android:onClick="showMenu"
+        app:srcCompat="@drawable/hamb"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <View
+        android:id="@+id/startup1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/vdark_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/change" />
+
+    <TextView
+        android:id="@+id/startup1name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="Linear"
+        android:textColor="@color/light_txt"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/startup1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/roboto"
+        android:text="ITSW"
+        android:textColor="@color/light_txt"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@id/guide1"
+        app:layout_constraintBottom_toBottomOf="@id/startup1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/roboto"
+        android:text="#34"
+        android:textColor="@color/light_txt"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@id/guide2"
+        app:layout_constraintBottom_toBottomOf="@id/startup1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="@id/guide3"
+        app:layout_constraintBottom_toBottomOf="@id/startup1"
+        app:srcCompat="@drawable/up"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="0.5%"
+        android:textColor="@color/light_txt"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/startup1name"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+
+    <View
+        android:id="@+id/startup2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/vdark_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/startup1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="Tise"
+        android:textColor="@color/light_txt"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/startup2"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/roboto"
+        android:text="ENGR"
+        android:textColor="@color/light_txt"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@id/guide1"
+        app:layout_constraintBottom_toBottomOf="@id/startup2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/roboto"
+        android:text="#34"
+        android:textColor="@color/light_txt"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@id/guide2"
+        app:layout_constraintBottom_toBottomOf="@id/startup2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="0.3%"
+        android:textColor="@color/light_txt"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/startup2"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="@id/guide3"
+        app:layout_constraintBottom_toBottomOf="@id/startup2"
+        app:srcCompat="@drawable/up"/>
+
+    <View
+        android:id="@+id/startup3"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/vdark_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/startup2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="Edunation"
+        android:textColor="@color/light_txt"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/startup3"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/roboto"
+        android:text="EDU"
+        android:textColor="@color/light_txt"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@id/guide1"
+        app:layout_constraintBottom_toBottomOf="@id/startup3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/roboto"
+        android:text="#25"
+        android:textColor="@color/light_txt"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@id/guide2"
+        app:layout_constraintBottom_toBottomOf="@id/startup3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="0.2%"
+        android:textColor="@color/light_txt"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/startup3"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="@id/guide3"
+        app:layout_constraintBottom_toBottomOf="@id/startup3"
+        app:srcCompat="@drawable/down"/>
+
+<!--    Start ROW 4-->
+    <View
+        android:id="@+id/startup4"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/vdark_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/startup3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="Pisara Learn"
+        android:textColor="@color/light_txt"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/startup4"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/roboto"
+        android:text="EDU"
+        android:textColor="@color/light_txt"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@id/guide1"
+        app:layout_constraintBottom_toBottomOf="@id/startup4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/roboto"
+        android:text="#25"
+        android:textColor="@color/light_txt"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@id/guide2"
+        app:layout_constraintBottom_toBottomOf="@id/startup4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="0.2%"
+        android:textColor="@color/light_txt"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/startup4"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="@id/guide3"
+        app:layout_constraintBottom_toBottomOf="@id/startup4"
+        app:srcCompat="@drawable/up"/>
+
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/roboto"
+        android:text="Rank"
+        android:textColor="@color/light_txt"
+        android:textSize="18sp"
+        app:layout_constraintRight_toLeftOf="@id/change"
+        app:layout_constraintTop_toBottomOf="@id/results" />
+
+    <TextView
+        android:id="@+id/industry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/roboto"
+        android:text="Industry"
+        android:textColor="@color/light_txt"
+        android:textSize="18sp"
+        app:layout_constraintRight_toLeftOf="@id/rank"
+        app:layout_constraintTop_toBottomOf="@id/results" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -40,42 +438,38 @@
         layout="@layout/toolbar"/>-->
 
 
-
     <View
         android:id="@+id/socialbar"
         android:layout_width="match_parent"
         android:layout_height="95dp"
         android:layout_marginTop="20dp"
         android:background="@color/dark_bg"
-        app:layout_constraintBottom_toBottomOf="parent"/>
-
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 
     <ImageView
         android:id="@+id/google"
         android:layout_width="wrap_content"
         android:layout_height="90dp"
+        android:src="@drawable/tailored"
         app:layout_constraintBottom_toBottomOf="@+id/facebook"
-        app:layout_constraintEnd_toStartOf="@+id/facebook"
 
+        app:layout_constraintEnd_toStartOf="@+id/facebook"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/facebook"
-        android:src="@drawable/tailored"
-        />
+        app:layout_constraintTop_toTopOf="@+id/facebook" />
 
     <ImageView
         android:id="@+id/facebook"
         android:layout_width="wrap_content"
         android:layout_height="90dp"
-        android:layout_marginBottom="0dp"
-        app:layout_constraintEnd_toStartOf="@+id/microsoft"
-        app:layout_constraintStart_toEndOf="@+id/google"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        app:srcCompat="@drawable/mylist"
-        />
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/microsoft"
+        app:layout_constraintStart_toEndOf="@+id/google"
+        app:srcCompat="@drawable/mylist" />
 
     <ImageView
         android:id="@+id/microsoft"
@@ -88,7 +482,33 @@
         app:layout_constraintTop_toTopOf="@+id/facebook"
         app:srcCompat="@drawable/newcomers" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="331dp" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="@id/industry" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="@id/rank" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="@id/change" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

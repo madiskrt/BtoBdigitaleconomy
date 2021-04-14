@@ -43,11 +43,11 @@
         android:title="My Profile"
         app:showAsAction="never"/>
     <item
-        android:id="@+id/action_about"
+        android:id="@+id/menuAbout"
         android:title="About"
         app:showAsAction="never"/>
     <item
-        android:id="@+id/action__sign_in_c"
+        android:id="@+id/menuLogOut"
         android:title="Log out"
         app:showAsAction="never"/>
 </menu>

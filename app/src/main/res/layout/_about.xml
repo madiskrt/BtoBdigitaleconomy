@@ -37,35 +37,33 @@
         tools:layout_editor_absoluteY="16dp"
         tools:ignore="MissingConstraints"
         android:contentDescription="TODO" />
+
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto"
-        android:text="TextView"
-        android:textAlignment="center"
+        android:text="South African Startup Hub"
+        android:layout_marginLeft="20dp"
         android:textColor="@color/light_txt"
         android:textSize="24sp"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="South African Startup Hub"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"/>
 
     <Button
-        android:id="@+id/Back"
+        android:id="@+id/closeAbout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:fontFamily="@font/roboto"
-        android:text="X"
+        android:text="x"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#EAEBEF"
         android:textSize="24sp"
         app:backgroundTint="#303135"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -99,8 +97,10 @@
         app:lineHeight="40dp" />
     <TextView
         android:id="@+id/description"
-        android:layout_width="411dp"
-        android:layout_height="280dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_marginTop="30dp"
         android:fontFamily="@font/roboto"
         android:text="This Hub works as a bridge between the South African Start-ups and European investors, with help of multinational and independent experts.\n\n
@@ -108,16 +108,18 @@ Whether you are an investor, a startup, or an expert in your field,
 We aim to make Your journey secure, simple and successful."
         android:textAlignment="center"
         android:textColor="@color/light_txt"
-        android:textSize="22sp"
-        app:layout_constraintEnd_toEndOf="@+id/background_col"
-        app:layout_constraintStart_toStartOf="@+id/background_col"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/count2"
         app:lineHeight="32sp" />
 
     <TextView
-        android:layout_width="408dp"
+        android:layout_width="match_parent"
         android:layout_height="129dp"
         android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:fontFamily="@font/roboto"
         android:text="* The Intellectual Property is protected with customized NDA agreements.\n
 ** No investment without 100% evaluation and satisfaction.
