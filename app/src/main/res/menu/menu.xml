@@ -39,7 +39,7 @@
         android:title="Meetings"
         app:showAsAction="never"/>
     <item
-        android:id="@+id/action_My_Profile"
+        android:id="@+id/menuMyProfile"
         android:title="My Profile"
         app:showAsAction="never"/>
     <item

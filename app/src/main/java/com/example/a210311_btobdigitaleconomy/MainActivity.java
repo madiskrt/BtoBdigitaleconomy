@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
     }
 
     public void openMyProfile(){
-        setContentView(R.layout.profile);
+        setContentView(R.layout._profile);
     }
 
     @Override
