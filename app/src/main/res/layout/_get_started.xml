@@ -6,13 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#303135"
-    android:paddingTop="@dimen/material_emphasis_medium"
+
     tools:ignore="ExtraText"
-    tools:context=".MainActivity"><![CDATA[>>
-
-
-
-    ]]>
+    tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView4"
@@ -28,9 +24,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
-        android:fontFamily="@font/roboto"
+
         android:text="Back"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+
         android:textColor="#EAEBEF"
         android:textSize="24sp"
         app:backgroundTint="#303135"
@@ -54,7 +50,7 @@
         android:id="@+id/textView8"
         android:layout_width="95dp"
         android:layout_height="34dp"
-        android:layout_marginStart="208dp"
+
         android:layout_marginTop="80dp"
         android:gravity="start"
         android:text="Investor"
@@ -62,19 +58,20 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="311dp"
         android:layout_height="70dp"
-        android:layout_marginStart="88dp"
         android:layout_marginTop="8dp"
         android:gravity="center|top"
         android:text="Find your golden goose!"
         android:textColor="#EAEBEF"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView8" />
 
     <TextView

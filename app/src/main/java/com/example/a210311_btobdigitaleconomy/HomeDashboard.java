@@ -46,7 +46,7 @@ public class HomeDashboard extends AppCompatActivity implements PopupMenu.OnMenu
         startActivity(intent);
     }
 
-    public void openProfile(){
+    public void openProfile2(){
         Intent intent = new Intent(this, ProfileActivity.class);
         startActivity(intent);
     }
@@ -57,19 +57,17 @@ public class HomeDashboard extends AppCompatActivity implements PopupMenu.OnMenu
             case R.id.action__home_dash_c:
                 Toast.makeText(this, "Dash clicked", Toast.LENGTH_SHORT).show();
                 return true;
-            case R.id.action_My_Profile:
-                Toast.makeText(this, "Dash clicked", Toast.LENGTH_SHORT).show();
-                //openMyProfile();
+            case R.id.menuMyProfile:
+                openProfile2();
                 return true;
+
             case R.id.menuAbout:
                 openAbout();
                 return true;
             case R.id.menuLogOut:
                 openSignIn();
                 return true;
-            case R.id.menuMyProfile:
-                openProfile();
-                return true;
+
             default:
                 return false;
         }
