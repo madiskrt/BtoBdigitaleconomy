@@ -46,6 +46,11 @@ public class HomeDashboard extends AppCompatActivity implements PopupMenu.OnMenu
         startActivity(intent);
     }
 
+    public void openProfile(){
+        Intent intent = new Intent(this, ProfileActivity.class);
+        startActivity(intent);
+    }
+
     @Override
     public boolean onMenuItemClick(MenuItem item) {
         switch (item.getItemId()){
@@ -61,6 +66,9 @@ public class HomeDashboard extends AppCompatActivity implements PopupMenu.OnMenu
                 return true;
             case R.id.menuLogOut:
                 openSignIn();
+                return true;
+            case R.id.menuMyProfile:
+                openProfile();
                 return true;
             default:
                 return false;
