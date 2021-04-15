@@ -20,6 +20,20 @@
         android:layout_height="match_parent"
         android:background="@color/vdark_bg" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:textAlignment="center"
+        android:textColor="@color/light_txt"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Home Dashboard"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
 
     <View
         android:id="@+id/results"
@@ -35,7 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/roboto"
-        android:text="36 results"
+        android:text="4 results"
         android:textAlignment="center"
         android:textColor="@color/light_txt"
         android:textSize="22sp"
@@ -395,7 +409,8 @@
         android:textColor="@color/light_txt"
         android:textSize="18sp"
         app:layout_constraintRight_toLeftOf="@id/change"
-        app:layout_constraintTop_toBottomOf="@id/results" />
+        app:layout_constraintTop_toBottomOf="@id/results"
+        tools:ignore="DuplicateIds" />
 
     <TextView
         android:id="@+id/industry"
@@ -408,7 +423,8 @@
         android:textColor="@color/light_txt"
         android:textSize="18sp"
         app:layout_constraintRight_toLeftOf="@id/rank"
-        app:layout_constraintTop_toBottomOf="@id/results" />
+        app:layout_constraintTop_toBottomOf="@id/results"
+        tools:ignore="DuplicateIds" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -419,7 +435,7 @@
         android:text="Settings"
         android:textAlignment="textStart"
         android:textColor="@color/light_txt"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -436,41 +452,13 @@
         android:background="@color/dark_bg"
         app:layout_constraintBottom_toBottomOf="parent" />
 
-
     <ImageView
-        android:id="@+id/google"
-        android:layout_width="wrap_content"
+        android:id="@+id/myproj_botbar"
+        android:layout_width="match_parent"
         android:layout_height="90dp"
-        android:src="@drawable/tailored"
-        app:layout_constraintBottom_toBottomOf="@+id/facebook"
-
-        app:layout_constraintEnd_toStartOf="@+id/facebook"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/facebook" />
-
-    <ImageView
-        android:id="@+id/facebook"
-        android:layout_width="wrap_content"
-        android:layout_height="90dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/microsoft"
-        app:layout_constraintStart_toEndOf="@+id/google"
-        app:srcCompat="@drawable/mylist" />
-
-    <ImageView
-        android:id="@+id/microsoft"
-        android:layout_width="wrap_content"
-        android:layout_height="90dp"
-        app:layout_constraintBottom_toBottomOf="@+id/facebook"
-        app:layout_constraintEnd_toEndOf="parent"
-
-        app:layout_constraintStart_toEndOf="@+id/facebook"
-        app:layout_constraintTop_toTopOf="@+id/facebook"
-        app:srcCompat="@drawable/newcomers" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/homedash_bot" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"

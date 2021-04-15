@@ -16,12 +16,9 @@
         />
     <item
         android:id="@+id/menuHomeDash"
-        android:title="Dashboard"
+        android:title="Home Dashboard"
         app:showAsAction="never"/>
-    <item
-        android:id="@+id/action_Home"
-        android:title="Home"
-        app:showAsAction="never"/>
+
     <item
         android:id="@+id/menuMyProjects"
         android:title="My Projects"
